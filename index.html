@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trivia</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-group m-3">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" class="form-control">
+                <option value="9">Conocimientos Generales</option>
+                <option value="10">Entretenimiento(libros)</option>
+                <option value="11">Entretenimiento(Peliculas)</option>
+                <option value="12">Entretenimiento(Musica)</option>
+                <option value="15">Entretenimiento(Videojuegos)</option>
+                <option value="20">Mitologia</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+        </div>
+
+        <div class="form-group m-3">
+            <label for="dificultad">Dificultad:</label>
+            <select id="dificultad" class="form-control">
+                <option value="easy">Fácil</option>
+                <option value="medium">Medio</option>
+                <option value="hard">Difícil</option>
+            </select>
+        </div>
+
+        <div class="form-group m-3">
+            <label for="tipo">Tipo:</label>
+            <select id="tipo" class="form-control">
+                <option value="multiple">Opción Múltiple</option>
+                <option value="boolean">Verdadero o Falso</option>
+            </select>
+        </div>
+
+        <div id="contenedor-quiz" class="m-3"></div>
+        <div id="botones-trivia">
+            <button id="siguiente-pregunta">Siguiente pregunta</button>
+            <button id="nueva-trivia">Iniciar nueva trivia</button>
+        </div>
+        
+        <div id="puntaje" class="m-3">Puntaje: 0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
